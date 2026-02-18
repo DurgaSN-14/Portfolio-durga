@@ -19,13 +19,12 @@
     }
 
     :root {
-      /* light mode – professional lavender/purple */
       --bg: #f5f3ff;
       --surface: rgba(255,255,255,0.7);
       --surface-solid: #ffffff;
       --text-primary: #1e1b4b;
       --text-secondary: #4c4a6e;
-      --accent: #7c3aed;        /* rich purple */
+      --accent: #7c3aed;
       --accent-soft: #c4b5fd;
       --border: #e2e8f0;
       --shadow: 0 8px 20px rgba(124,58,237,0.08), 0 2px 6px rgba(0,0,0,0.02);
@@ -37,13 +36,12 @@
     }
 
     body.dark {
-      /* dark mode – deep indigo with violet glow */
       --bg: #0b0819;
       --surface: rgba(15,15,30,0.7);
       --surface-solid: #1e1a3a;
       --text-primary: #f1f5f9;
       --text-secondary: #cbd5e1;
-      --accent: #a78bfa;        /* soft violet */
+      --accent: #a78bfa;
       --accent-soft: #6d28d9;
       --border: #2e2a4a;
       --shadow: 0 8px 20px rgba(167,139,250,0.2), 0 2px 6px rgba(0,0,0,0.8);
@@ -124,49 +122,22 @@
       border: 1px solid var(--border); font-size: 1.4rem; color: var(--accent);
     }
 
-    /* Responsive navbar */
     @media (max-width: 768px) {
-      nav {
-        padding: 0.6rem 1rem;
-        gap: 0.5rem;
-      }
-      .nav-links {
-        gap: 1rem;
-        flex-wrap: wrap;
-        justify-content: center;
-      }
-      .nav-links a {
-        font-size: 0.95rem;
-      }
+      nav { padding: 0.6rem 1rem; gap: 0.5rem; }
+      .nav-links { gap: 1rem; flex-wrap: wrap; justify-content: center; }
+      .nav-links a { font-size: 0.95rem; }
     }
     @media (max-width: 480px) {
-      nav {
-        flex-direction: column;
-        align-items: center;
-        padding: 0.8rem;
-      }
-      .nav-links {
-        gap: 0.8rem;
-        justify-content: center;
-        margin-bottom: 0.3rem;
-      }
-      .nav-links a {
-        font-size: 0.9rem;
-      }
-      .theme-toggle {
-        margin-top: 0.2rem;
-      }
+      nav { flex-direction: column; align-items: center; padding: 0.8rem; }
+      .nav-links { gap: 0.8rem; justify-content: center; margin-bottom: 0.3rem; }
+      .nav-links a { font-size: 0.9rem; }
+      .theme-toggle { margin-top: 0.2rem; }
     }
 
     .nav-links a {
-      position: relative;
-      opacity: 0.8;
-      transition: 0.2s;
+      position: relative; opacity: 0.8; transition: 0.2s;
     }
-    .nav-links a.active, .nav-links a:hover {
-      opacity: 1;
-      color: var(--accent);
-    }
+    .nav-links a.active, .nav-links a:hover { opacity: 1; color: var(--accent); }
     .nav-links a.active::after {
       content: ''; position: absolute; bottom: -6px; left: 0; width: 100%;
       height: 2px; background: var(--accent); border-radius: 2px;
@@ -186,11 +157,7 @@
       white-space: nowrap;
     }
     @media (max-width: 480px) {
-      .terminal-intro {
-        font-size: 1rem;
-        white-space: normal;
-        padding: 0.5rem 1rem;
-      }
+      .terminal-intro { font-size: 1rem; white-space: normal; padding: 0.5rem 1rem; }
     }
     .cursor-glow {
       display: inline-block; width: 10px; height: 1.4rem; background: var(--accent);
@@ -225,15 +192,9 @@
       border-radius: 2rem; padding: 1.5rem; text-align: center; transition: all 0.2s;
       box-shadow: var(--shadow);
     }
-    .tech-skill-card:hover {
-      transform: translateY(-8px); box-shadow: 0 20px 30px var(--accent);
-    }
-    .tech-skill-card i {
-      font-size: 2.8rem; color: var(--accent); margin-bottom: 0.8rem;
-    }
-    .tech-skill-card h3 {
-      font-size: 1.6rem; margin-bottom: 0.3rem;
-    }
+    .tech-skill-card:hover { transform: translateY(-8px); box-shadow: 0 20px 30px var(--accent); }
+    .tech-skill-card i { font-size: 2.8rem; color: var(--accent); margin-bottom: 0.8rem; }
+    .tech-skill-card h3 { font-size: 1.6rem; margin-bottom: 0.3rem; }
     .tech-skill-card .level {
       display: inline-block; background: var(--accent-soft); color: #1e1b4b;
       padding: 0.2rem 1rem; border-radius: 30px; font-size: 0.9rem; font-weight: 600;
@@ -249,9 +210,7 @@
       border-radius: 2rem; padding: 1.8rem; text-align: center; transition: all 0.2s;
       box-shadow: var(--shadow);
     }
-    .skill-card:hover {
-      transform: translateY(-8px); box-shadow: 0 20px 30px var(--accent);
-    }
+    .skill-card:hover { transform: translateY(-8px); box-shadow: 0 20px 30px var(--accent); }
     .skill-card i { font-size: 3rem; color: var(--accent); margin-bottom: 0.8rem; }
     .skill-card h3 { font-size: 1.8rem; }
 
@@ -265,15 +224,9 @@
       border-radius: 2rem; padding: 1.5rem; text-align: center; transition: 0.2s;
       box-shadow: var(--shadow);
     }
-    .soft-skill-card:hover {
-      transform: translateY(-5px); box-shadow: 0 15px 25px var(--accent);
-    }
-    .soft-skill-card h4 {
-      font-size: 1.4rem; margin-bottom: 0.3rem;
-    }
-    .soft-skill-card p {
-      color: var(--accent); font-weight: 600; font-size: 1rem;
-    }
+    .soft-skill-card:hover { transform: translateY(-5px); box-shadow: 0 15px 25px var(--accent); }
+    .soft-skill-card h4 { font-size: 1.4rem; margin-bottom: 0.3rem; }
+    .soft-skill-card p { color: var(--accent); font-weight: 600; font-size: 1rem; }
 
     /* ===== PROJECT CARDS ===== */
     .projects-grid {
@@ -285,30 +238,18 @@
       backdrop-filter: blur(8px); border: 1px solid var(--glass-border); transition: 0.2s;
       display: flex; flex-direction: column;
     }
-    .project-card:hover {
-      transform: translateY(-10px); box-shadow: 0 30px 40px var(--accent);
-    }
-    .project-tech {
-      display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 1rem 0;
-    }
+    .project-card:hover { transform: translateY(-10px); box-shadow: 0 30px 40px var(--accent); }
+    .project-tech { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 1rem 0; }
     .tech-tag {
       background: var(--accent-soft); color: #1e1b4b; padding: 0.2rem 0.8rem;
       border-radius: 30px; font-size: 0.75rem; font-weight: 600;
     }
-    .project-features {
-      margin: 1rem 0; padding-left: 1.2rem; flex-grow: 1;
-    }
-    .card-buttons {
-      display: flex; gap: 1rem; margin-top: 1.5rem;
-    }
-    .card-buttons .btn, .card-buttons .btn-outline {
-      padding: 0.5rem 1.2rem; font-size: 0.9rem;
-    }
+    .project-features { margin: 1rem 0; padding-left: 1.2rem; flex-grow: 1; }
+    .card-buttons { display: flex; gap: 1rem; margin-top: 1.5rem; }
+    .card-buttons .btn, .card-buttons .btn-outline { padding: 0.5rem 1.2rem; font-size: 0.9rem; }
 
     /* ===== LANGUAGES ===== */
-    .lang-tags {
-      display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 0.5rem;
-    }
+    .lang-tags { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 0.5rem; }
     .lang-tag {
       background: var(--accent-soft); color: #1e1b4b; padding: 0.3rem 1.5rem;
       border-radius: 40px; font-weight: 500;
@@ -318,9 +259,7 @@
     .timeline {
       border-left: 3px solid var(--accent); padding-left: 2rem; margin-left: 1rem;
     }
-    .timeline-item {
-      margin-bottom: 2.5rem; position: relative;
-    }
+    .timeline-item { margin-bottom: 2.5rem; position: relative; }
     .timeline-dot {
       width: 16px; height: 16px; background: var(--accent); border-radius: 50%;
       position: absolute; left: -2.45rem; top: 0.4rem; border: 2px solid var(--bg);
@@ -331,15 +270,9 @@
     }
 
     /* ===== VERTICAL TIMELINE ===== */
-    .vertical-timeline {
-      display: flex; flex-direction: column; gap: 2rem; margin-top: 2rem;
-    }
-    .timeline-item-simple {
-      display: flex; gap: 2rem; align-items: center;
-    }
-    .timeline-year {
-      font-size: 2rem; font-weight: 700; color: var(--accent); min-width: 120px;
-    }
+    .vertical-timeline { display: flex; flex-direction: column; gap: 2rem; margin-top: 2rem; }
+    .timeline-item-simple { display: flex; gap: 2rem; align-items: center; }
+    .timeline-year { font-size: 2rem; font-weight: 700; color: var(--accent); min-width: 120px; }
     .timeline-desc {
       background: var(--card-bg); backdrop-filter: blur(4px); padding: 1rem 2rem;
       border-radius: 40px; border: 1px solid var(--glass-border);
@@ -348,8 +281,7 @@
     /* ===== INTERNSHIP & CERTIFICATION CARDS ===== */
     .internship-card, .cert-card {
       background: var(--card-bg); backdrop-filter: blur(8px); border: 1px solid var(--glass-border);
-      border-radius: 2rem; padding: 1.8rem; box-shadow: var(--shadow);
-      margin-bottom: 2rem;
+      border-radius: 2rem; padding: 1.8rem; box-shadow: var(--shadow); margin-bottom: 2rem;
     }
     .cert-grid {
       display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem;
@@ -362,7 +294,7 @@
     .cert-item i { font-size: 2.5rem; color: var(--accent); margin-bottom: 0.5rem; }
     .cert-item h4 { font-size: 1.2rem; }
 
-    /* ===== CHATBOT (AI-POWERED) with improved error handling ===== */
+    /* ===== CHATBOT (AI-POWERED) with retry & fallback ===== */
     .chatbot-icon {
       position: fixed; bottom: 2rem; left: 2rem; width: 60px; height: 60px;
       background: var(--accent); border-radius: 50%; display: flex; align-items: center;
@@ -385,19 +317,10 @@
       background: var(--card-bg); padding: 0.5rem 1rem; border-radius: 20px;
       word-wrap: break-word; max-width: 85%;
     }
-    .chat-msg.user {
-      align-self: flex-end; background: var(--accent); color: white;
-    }
-    .chat-msg.bot {
-      align-self: flex-start; background: var(--surface); border: 1px solid var(--glass-border);
-    }
-    .chat-msg.error {
-      align-self: flex-start; background: #fee2e2; color: #b91c1c; border: 1px solid #fecaca;
-    }
-    .chat-msg.loading {
-      align-self: flex-start; background: transparent; color: var(--text-secondary);
-      font-style: italic;
-    }
+    .chat-msg.user { align-self: flex-end; background: var(--accent); color: white; }
+    .chat-msg.bot { align-self: flex-start; background: var(--surface); border: 1px solid var(--glass-border); }
+    .chat-msg.error { align-self: flex-start; background: #fee2e2; color: #b91c1c; border: 1px solid #fecaca; }
+    .chat-msg.loading { align-self: flex-start; background: transparent; color: var(--text-secondary); font-style: italic; }
     .chat-input {
       display: flex; gap: 0.5rem; border-top: 1px solid var(--border); padding-top: 0.8rem;
     }
@@ -409,14 +332,10 @@
       background: var(--accent); border: none; border-radius: 20px; padding: 0.5rem 1rem;
       color: white; cursor: pointer;
     }
-    .chat-input button:disabled {
-      opacity: 0.5; cursor: not-allowed;
-    }
+    .chat-input button:disabled { opacity: 0.5; cursor: not-allowed; }
 
     /* ===== CONTACT ===== */
-    .contact-grid {
-      display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;
-    }
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
     .contact-info { display: flex; flex-direction: column; gap: 1.2rem; }
     .contact-card {
       display: flex; align-items: center; gap: 1rem; background: var(--card-bg);
@@ -469,7 +388,7 @@
   <!-- PARTICLES CANVAS -->
   <canvas id="particles-canvas"></canvas>
 
-  <!-- NAVIGATION – FULLY RESPONSIVE -->
+  <!-- NAVIGATION -->
   <nav>
     <div class="nav-links">
       <a href="#home">Home</a> <a href="#about">About</a> <a href="#skills">Skills</a>
@@ -481,7 +400,7 @@
   <!-- SCROLL TOP -->
   <div id="scrollTop"><i class="fas fa-arrow-up"></i></div>
 
-  <!-- CHATBOT (AI-POWERED) with robust error handling -->
+  <!-- CHATBOT (AI-POWERED) with retry and fallback -->
   <div class="chatbot-icon" id="chatbotIcon"><i class="fas fa-robot"></i></div>
   <div class="chat-popup" id="chatPopup">
     <div class="chat-messages" id="chatMessages">
@@ -564,66 +483,10 @@
       <div class="container reveal">
         <h2> Projects</h2>
         <div class="projects-grid">
-          <!-- Expenses Tracker -->
-          <div class="project-card">
-            <h3>Expenses Tracker Application</h3>
-            <p class="project-tech"><span class="tech-tag">React</span><span class="tech-tag">JavaScript</span><span class="tech-tag">LocalStorage</span></p>
-            <ul class="project-features">
-              <li>Helped individuals and businesses track expenses and make informed financial decisions.</li>
-              <li>Assisted in creating realistic budgets and identifying areas to reduce unnecessary spending.</li>
-              <li>Promoted savings goals and encouraged responsible financial habits.</li>
-              <li>Simplified tax planning and business-related expense management.</li>
-            </ul>
-            <div class="card-buttons">
-              <a href="#" class="btn"><i class="fab fa-github"></i> Code</a>
-              <a href="#" class="btn-outline"><i class="fas fa-external-link-alt"></i> Live</a>
-            </div>
-          </div>
-          <!-- Student Management System -->
-          <div class="project-card">
-            <h3>Student Management System</h3>
-            <p class="project-tech"><span class="tech-tag">Python</span><span class="tech-tag">Flask</span><span class="tech-tag">SQL</span></p>
-            <ul class="project-features">
-              <li>Developed an online system for managing student data, attendance, marks, and assignments.</li>
-              <li>Replaced manual, paper-based processes with a secure, centralized digital platform.</li>
-              <li>Enabled real-time access and updates for admin, staff, and students.</li>
-              <li>Integrated database to ensure data security and streamlined academic operations.</li>
-            </ul>
-            <div class="card-buttons">
-              <a href="#" class="btn"><i class="fab fa-github"></i> Code</a>
-              <a href="#" class="btn-outline"><i class="fas fa-external-link-alt"></i> Live</a>
-            </div>
-          </div>
-          <!-- Weather Dashboard -->
-          <div class="project-card">
-            <h3>Weather Dashboard</h3>
-            <p class="project-tech"><span class="tech-tag">React</span><span class="tech-tag">API</span><span class="tech-tag">Chart.js</span></p>
-            <ul class="project-features">
-              <li>Real-time weather data from OpenWeatherMap API.</li>
-              <li>Interactive charts for weekly forecast.</li>
-              <li>Search by city with autocomplete.</li>
-              <li>Responsive design with animated icons.</li>
-            </ul>
-            <div class="card-buttons">
-              <a href="#" class="btn"><i class="fab fa-github"></i> Code</a>
-              <a href="#" class="btn-outline"><i class="fas fa-external-link-alt"></i> Live</a>
-            </div>
-          </div>
-          <!-- Task Manager -->
-          <div class="project-card">
-            <h3>Task Manager</h3>
-            <p class="project-tech"><span class="tech-tag">Node.js</span><span class="tech-tag">Express</span><span class="tech-tag">MongoDB</span></p>
-            <ul class="project-features">
-              <li>Create, update, delete tasks with due dates and priorities.</li>
-              <li>User authentication and private task lists.</li>
-              <li>Drag-and-drop task sorting.</li>
-              <li>Mobile-friendly interface.</li>
-            </ul>
-            <div class="card-buttons">
-              <a href="#" class="btn"><i class="fab fa-github"></i> Code</a>
-              <a href="#" class="btn-outline"><i class="fas fa-external-link-alt"></i> Live</a>
-            </div>
-          </div>
+          <div class="project-card"><h3>Expenses Tracker Application</h3><p class="project-tech"><span class="tech-tag">React</span><span class="tech-tag">JavaScript</span><span class="tech-tag">LocalStorage</span></p><ul class="project-features"><li>Helped individuals and businesses track expenses and make informed financial decisions.</li><li>Assisted in creating realistic budgets and identifying areas to reduce unnecessary spending.</li><li>Promoted savings goals and encouraged responsible financial habits.</li><li>Simplified tax planning and business-related expense management.</li></ul><div class="card-buttons"><a href="#" class="btn"><i class="fab fa-github"></i> Code</a><a href="#" class="btn-outline"><i class="fas fa-external-link-alt"></i> Live</a></div></div>
+          <div class="project-card"><h3>Student Management System</h3><p class="project-tech"><span class="tech-tag">Python</span><span class="tech-tag">Flask</span><span class="tech-tag">SQL</span></p><ul class="project-features"><li>Developed an online system for managing student data, attendance, marks, and assignments.</li><li>Replaced manual, paper-based processes with a secure, centralized digital platform.</li><li>Enabled real-time access and updates for admin, staff, and students.</li><li>Integrated database to ensure data security and streamlined academic operations.</li></ul><div class="card-buttons"><a href="#" class="btn"><i class="fab fa-github"></i> Code</a><a href="#" class="btn-outline"><i class="fas fa-external-link-alt"></i> Live</a></div></div>
+          <div class="project-card"><h3>Weather Dashboard</h3><p class="project-tech"><span class="tech-tag">React</span><span class="tech-tag">API</span><span class="tech-tag">Chart.js</span></p><ul class="project-features"><li>Real-time weather data from OpenWeatherMap API.</li><li>Interactive charts for weekly forecast.</li><li>Search by city with autocomplete.</li><li>Responsive design with animated icons.</li></ul><div class="card-buttons"><a href="#" class="btn"><i class="fab fa-github"></i> Code</a><a href="#" class="btn-outline"><i class="fas fa-external-link-alt"></i> Live</a></div></div>
+          <div class="project-card"><h3>Task Manager</h3><p class="project-tech"><span class="tech-tag">Node.js</span><span class="tech-tag">Express</span><span class="tech-tag">MongoDB</span></p><ul class="project-features"><li>Create, update, delete tasks with due dates and priorities.</li><li>User authentication and private task lists.</li><li>Drag-and-drop task sorting.</li><li>Mobile-friendly interface.</li></ul><div class="card-buttons"><a href="#" class="btn"><i class="fab fa-github"></i> Code</a><a href="#" class="btn-outline"><i class="fas fa-external-link-alt"></i> Live</a></div></div>
         </div>
       </div>
     </section>
@@ -633,22 +496,9 @@
       <div class="container reveal">
         <h2> Education</h2>
         <div class="timeline">
-          <div class="timeline-item">
-            <span class="timeline-dot"></span>
-            <div class="timeline-content">
-              <h3>B.E. Computer Science and Engineering</h3>
-              <p>Government College of Engineering, Tirunelveli · 2024 – 2027 (Pursuing)</p>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <span class="timeline-dot"></span>
-            <div class="timeline-content">
-              <h3>Diploma in Computer Science and Engineering</h3>
-              <p>Sankar Institute of Polytechnic College · 2021 – 2024 · Percentage: 97%</p>
-            </div>
-          </div>
+          <div class="timeline-item"><span class="timeline-dot"></span><div class="timeline-content"><h3>B.E. Computer Science and Engineering</h3><p>Government College of Engineering, Tirunelveli · 2024 – 2027 (Pursuing)</p></div></div>
+          <div class="timeline-item"><span class="timeline-dot"></span><div class="timeline-content"><h3>Diploma in Computer Science and Engineering</h3><p>Sankar Institute of Polytechnic College · 2021 – 2024 · Percentage: 97%</p></div></div>
         </div>
-
         <h2 style="margin-top:3rem;">Journey</h2>
         <div class="vertical-timeline">
           <div class="timeline-item-simple"><div class="timeline-year">2021</div><div class="timeline-desc">Started Diploma in CSE</div></div>
@@ -670,7 +520,6 @@
             <li>Participated in code reviews and agile meetings.</li>
           </ul>
         </div>
-
         <h2 style="margin-top: 2rem;"> Certifications</h2>
         <div class="cert-grid">
           <div class="cert-item"><i class="fab fa-redhat"></i><h4>Red Hat Linux Administration</h4></div>
@@ -680,7 +529,7 @@
       </div>
     </section>
 
-    <!-- CONTACT (now complete with all cards) -->
+    <!-- CONTACT -->
     <section id="contact">
       <div class="container reveal">
         <h2>Get in touch</h2>
@@ -689,14 +538,8 @@
             <div class="contact-card"><i class="fas fa-phone-alt"></i> +91 8438801404</div>
             <div class="contact-card"><i class="fas fa-envelope"></i> durgasn1404@gmail.com</div>
             <div class="contact-card"><i class="fas fa-map-marker-alt"></i> Tirunelveli, Tamilnadu, India</div>
-            <div class="contact-card">
-              <i class="fab fa-linkedin"></i>
-              <a href="https://www.linkedin.com/in/durga-sankaranainar-235540254/" target="_blank">linkedin.com/in/durga-sankaranainar</a>
-            </div>
-            <div class="contact-card">
-              <i class="fab fa-github"></i>
-              <a href="https://github.com/durga-cse" target="_blank">github.com/durga-cse</a>
-            </div>
+            <div class="contact-card"><i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/in/durga-sankaranainar-235540254/" target="_blank">linkedin.com/in/durga-sankaranainar</a></div>
+            <div class="contact-card"><i class="fab fa-github"></i><a href="https://github.com/durga-cse" target="_blank">github.com/durga-cse</a></div>
           </div>
           <div class="contact-form glass-card">
             <form onsubmit="alert('Demo: message sent!'); return false;">
@@ -730,23 +573,15 @@
         canvas.width = width; canvas.height = height;
         particles = [];
         for (let i = 0; i < 60; i++) {
-          particles.push({
-            x: Math.random() * width, y: Math.random() * height,
-            vx: (Math.random() - 0.5) * 0.4, vy: (Math.random() - 0.5) * 0.4,
-            radius: Math.random() * 2.5 + 1,
-          });
+          particles.push({ x: Math.random() * width, y: Math.random() * height, vx: (Math.random() - 0.5) * 0.4, vy: (Math.random() - 0.5) * 0.4, radius: Math.random() * 2.5 + 1 });
         }
       }
       function drawParticles() {
         ctx.clearRect(0, 0, width, height);
         ctx.fillStyle = '#7c3aed';
         particles.forEach(p => {
-          ctx.beginPath();
-          ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
-          ctx.fillStyle = '#7c3aed';
-          ctx.shadowColor = '#7c3aed';
-          ctx.shadowBlur = 8;
-          ctx.fill();
+          ctx.beginPath(); ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+          ctx.fillStyle = '#7c3aed'; ctx.shadowColor = '#7c3aed'; ctx.shadowBlur = 8; ctx.fill();
           p.x += p.vx; p.y += p.vy;
           if (p.x < 0 || p.x > width) p.vx *= -1;
           if (p.y < 0 || p.y > height) p.vy *= -1;
@@ -761,22 +596,19 @@
       const body = document.body;
       const icon = toggle.querySelector('i');
       if (localStorage.getItem('theme') === 'dark') {
-        body.classList.add('dark');
-        icon.classList.replace('fa-moon', 'fa-sun');
+        body.classList.add('dark'); icon.classList.replace('fa-moon', 'fa-sun');
       }
       toggle.addEventListener('click', () => {
         body.classList.toggle('dark');
         if (body.classList.contains('dark')) {
-          icon.classList.replace('fa-moon', 'fa-sun');
-          localStorage.setItem('theme', 'dark');
+          icon.classList.replace('fa-moon', 'fa-sun'); localStorage.setItem('theme', 'dark');
         } else {
-          icon.classList.replace('fa-sun', 'fa-moon');
-          localStorage.setItem('theme', 'light');
+          icon.classList.replace('fa-sun', 'fa-moon'); localStorage.setItem('theme', 'light');
         }
       });
 
-      // ========== AI CHATBOT with improved error handling ==========
-      const API_KEY = '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'; // Provided key
+      // ========== AI CHATBOT with retry & fallback ==========
+      const API_KEY = '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';
       const MODEL = 'llama-3.3-70b-versatile';
       const chatIcon = document.getElementById('chatbotIcon');
       const chatPopup = document.getElementById('chatPopup');
@@ -784,15 +616,32 @@
       const chatInput = document.getElementById('chatInput');
       const chatSend = document.getElementById('chatSend');
 
-      // Conversation history
-      let messages = [
-        { role: 'system', content: 'You are a helpful assistant for Durga Sankaranainar\'s portfolio. Answer questions about Durga, her skills, projects, education, and experience based on the portfolio content. Be friendly and concise.' }
-      ];
+      // Local knowledge base for fallback
+      const localAnswers = {
+        'skills': 'Durga has advanced skills in C, Java, Python, JavaScript, HTML/CSS, Bootstrap, and intermediate React.',
+        'projects': 'Durga has built an Expenses Tracker, Student Management System, Weather Dashboard, and Task Manager.',
+        'education': 'Durga is pursuing B.E. CSE at Government College of Engineering, Tirunelveli (2024-2027) and completed Diploma in CSE with 97% at Sankar Institute (2021-2024).',
+        'experience': 'Durga interned at Icanio Technologies as a Frontend Developer for 1 month (Dec 2025 - Jan 2026).',
+        'certifications': 'Durga holds certifications in Red Hat Linux Administration, React JavaScript, and Java.',
+        'contact': 'You can reach Durga at +91 8438801404, durgasn1404@gmail.com, or via LinkedIn/GitHub.',
+        'default': "I'm not sure about that. You can ask about Durga's skills, projects, education, experience, or contact."
+      };
 
-      // Toggle chat window
+      function getLocalResponse(userText) {
+        const lower = userText.toLowerCase();
+        if (lower.includes('skill')) return localAnswers.skills;
+        if (lower.includes('project')) return localAnswers.projects;
+        if (lower.includes('education') || lower.includes('study') || lower.includes('college')) return localAnswers.education;
+        if (lower.includes('experience') || lower.includes('intern')) return localAnswers.experience;
+        if (lower.includes('certif')) return localAnswers.certifications;
+        if (lower.includes('contact') || lower.includes('phone') || lower.includes('email') || lower.includes('linkedin') || lower.includes('github')) return localAnswers.contact;
+        return localAnswers.default;
+      }
+
+      let messages = [{ role: 'system', content: 'You are a helpful assistant for Durga Sankaranainar\'s portfolio. Answer questions about Durga, her skills, projects, education, and experience based on the portfolio content. Be friendly and concise.' }];
+
       chatIcon.addEventListener('click', () => chatPopup.classList.toggle('show'));
 
-      // Add message to UI
       function addMessage(text, sender, isError = false) {
         const msgDiv = document.createElement('div');
         msgDiv.className = `chat-msg ${sender}`;
@@ -802,7 +651,6 @@
         chatMessages.scrollTop = chatMessages.scrollHeight;
       }
 
-      // Show loading indicator
       function showLoading() {
         const loadingDiv = document.createElement('div');
         loadingDiv.className = 'chat-msg loading';
@@ -819,52 +667,48 @@
         chatSend.disabled = false;
       }
 
-      // Call Groq API with timeout
-      async function fetchBotReply(userMessage) {
-        messages.push({ role: 'user', content: userMessage });
-        const controller = new AbortController();
-        const timeoutId = setTimeout(() => controller.abort(), 15000); // 15 second timeout
+      async function fetchBotReplyWithRetry(userMessage, retries = 2) {
+        for (let i = 0; i <= retries; i++) {
+          try {
+            const controller = new AbortController();
+            const timeoutId = setTimeout(() => controller.abort(), 10000); // 10s timeout
+            const response = await fetch('https://api.groq.com/openai/v1/chat/completions', {
+              method: 'POST',
+              headers: {
+                'Authorization': `Bearer ${API_KEY}`,
+                'Content-Type': 'application/json'
+              },
+              body: JSON.stringify({
+                model: MODEL,
+                messages: messages.concat({ role: 'user', content: userMessage }),
+                temperature: 0.7,
+                max_tokens: 300
+              }),
+              signal: controller.signal
+            });
+            clearTimeout(timeoutId);
 
-        try {
-          const response = await fetch('https://api.groq.com/openai/v1/chat/completions', {
-            method: 'POST',
-            headers: {
-              'Authorization': `Bearer ${API_KEY}`,
-              'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({
-              model: MODEL,
-              messages: messages,
-              temperature: 0.7,
-              max_tokens: 300
-            }),
-            signal: controller.signal
-          });
-
-          clearTimeout(timeoutId);
-
-          if (!response.ok) {
-            let errorMsg = `API error: ${response.status}`;
-            if (response.status === 401) errorMsg = 'Invalid API key. Please check your key.';
-            else if (response.status === 429) errorMsg = 'Rate limit exceeded. Please try later.';
-            throw new Error(errorMsg);
+            if (!response.ok) {
+              throw new Error(`HTTP ${response.status}`);
+            }
+            const data = await response.json();
+            const botReply = data.choices[0].message.content;
+            messages.push({ role: 'assistant', content: botReply });
+            return botReply;
+          } catch (error) {
+            console.log(`Attempt ${i+1} failed:`, error);
+            if (i === retries) {
+              // After all retries, use local fallback
+              const fallbackReply = getLocalResponse(userMessage);
+              messages.push({ role: 'assistant', content: fallbackReply });
+              return fallbackReply + ' (offline mode)';
+            }
+            // Wait before retry
+            await new Promise(resolve => setTimeout(resolve, 1000 * (i+1)));
           }
-
-          const data = await response.json();
-          const botReply = data.choices[0].message.content;
-          messages.push({ role: 'assistant', content: botReply });
-          return botReply;
-        } catch (error) {
-          clearTimeout(timeoutId);
-          console.error('Chatbot error:', error);
-          if (error.name === 'AbortError') {
-            return 'Request timed out. Please try again.';
-          }
-          return `Error: ${error.message}. Please try again later.`;
         }
       }
 
-      // Handle send
       chatSend.addEventListener('click', async () => {
         const userText = chatInput.value.trim();
         if (!userText) return;
@@ -873,16 +717,13 @@
         chatInput.value = '';
         showLoading();
 
-        const botReply = await fetchBotReply(userText);
+        const botReply = await fetchBotReplyWithRetry(userText);
         hideLoading();
-        addMessage(botReply, 'bot', botReply.startsWith('Error:'));
+        addMessage(botReply, 'bot', botReply.includes('offline mode'));
       });
 
-      // Allow Enter key
       chatInput.addEventListener('keypress', (e) => {
-        if (e.key === 'Enter') {
-          chatSend.click();
-        }
+        if (e.key === 'Enter') chatSend.click();
       });
 
       // Scroll reveal & active nav
